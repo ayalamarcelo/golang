@@ -126,6 +126,7 @@ Una estructura condicional si no tiene condición no puede ser estructura condic
 graph TD;
     A-->B;
     A-->C;
+    A-->D;
     B-->D;
     C-->D;
 ```
