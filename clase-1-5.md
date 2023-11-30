@@ -93,4 +93,7 @@ public class Suma{
 | **+** | Más | Suma | **ALT + 43** |
 | **-** | Menos | Resta | **ALT + 45** |
 | **(*)** | Asterisco | Multiplicación | **ALT + 42** |
-| **/** | Diagonal o Slash | División | **ALT + 47 |
+| **/** | Diagonal o Slash | División | **ALT + 47** |
+| **^** | Acento circunflejo | Potencia | **ALT + 94** |
+| **(** | Paréntesis apertura | Prioridad entre operaciones | **ALT + 40** |
+| **)** | Paréntesis cierre | Prioridad entre operaciones | **ALT + 41** |
