@@ -122,13 +122,47 @@ public class Operaciones{
 Es una instrucción que ayuda a nuestros programas a saber qué proceso o qué camino debe de seguir dependiendo en la situación que se encuentre.
 Una estructura condicional si no tiene condición no puede ser estructura condicional. No hay camino o proceso que seguir.
 
+**Ejemplo:**
+Condiciones:
+
+**Situación: ¿Mamá, puedo ir a la fiesta?**
+**Condición: Si quieres ir, debes hacer tu tarea.**
+
 ```mermaid
 graph TD
-A{Condicional};
-B[Accion B];
-C[Accion C];
-D[Accion D];
-E((Fin));
+A{Condición};
+B[Ejecuta acción B];
+C[Ejecuta acción C];
+D[Ejecuta acción D];
+E(Fin, se termina la condición);
+
+A --Sí o verdadero--> B --> C --> E;
+A --No o falso--> D --> E; 
+```
+## Estructuras condicionales simples
+Uno de los dos caminos va a tener instrucciones el otro no.
+
+```mermaid
+graph TD
+
+A{Condición};
+B[Ejecuta accion B];
+C[Ejecuta accion C];
+D(Fin, se termina la condición);
+
+A --Sí o verdadero--> B --> C-->D;
+A --No o falso--> D;
+```
+## Estructura condicionales compuestas
+Van a tener instrucciones por ambas partes.
+
+```mermaid
+graph TD
+A{Condición};
+B[Ejecuta acción B];
+C[Ejecuta acción C];
+D[Ejecuta acción D];
+E(Fin, se termina la condición);
 
 A --Sí o verdadero--> B --> C --> E;
 A --No o falso--> D --> E; 
