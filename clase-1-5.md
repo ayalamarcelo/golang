@@ -85,3 +85,12 @@ public class Suma{
  }
 }
 ```
+
+## Operadores aritméticos y prioridad de los signos
+
+| Signo | Nombre del Signo | Tipo de operación | Código ASCE |
+|-------|------------------|-------------------|-------------|
+| **+** | Más | Suma | **ALT + 43** |
+| **-** | Menos | Resta | **ALT + 45** |
+| **(*)** | Asterisco | Multiplicación | **ALT + 42** |
+| **/** | Diagonal o Slash | División | **ALT + 47 |
