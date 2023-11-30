@@ -87,9 +87,8 @@ public class Suma{
 ```
 
 ## Operadores aritméticos y prioridad de los signos
-
-| Signo | Nombre del Signo | Tipo de operación | Código ASCE |
-|-------|------------------|-------------------|-------------|
+| **Signo** | **Nombre del Signo** | **Tipo de operación** | **Código ASCII** |
+|:-------:|:------------------:|:-------------------:|:-------------:|
 | **+** | Más | Suma | **ALT + 43** |
 | **-** | Menos | Resta | **ALT + 45** |
 | **(*)** | Asterisco | Multiplicación | **ALT + 42** |
@@ -97,3 +96,25 @@ public class Suma{
 | **^** | Acento circunflejo | Potencia | **ALT + 94** |
 | **(** | Paréntesis apertura | Prioridad entre operaciones | **ALT + 40** |
 | **)** | Paréntesis cierre | Prioridad entre operaciones | **ALT + 41** |
+
+## Prioridad entre operadores
+Cuando tu realizas una operación en matemáticas o en programación, existe una piramide donde se va a ejecutar de arriba hacia abajo. Cuando nosotros programemos o realizemos una operación siempre se va a resolver lo que está dentro de `()`, posteriormente va a buscar `^` y si posteriormente no encuentra, seguirá con `*, /`, por último `+ y -`. Siempre esta va a ser la prioridad.
+Ejemplo:
+
+```java
+
+public class Operaciones{
+  public static void main(String args[]){
+ 
+   int numUno = 4;
+   int numDos = 4;
+   int resultado = 0;
+
+   resultado = numUno + numDos / 2;
+   System.out.println("El resultado incorrecto: " + resultado);
+
+   resultado = (numUno + numDos) / 2;
+   System.out.println("El resultado correcto: " + resultado);
+ }
+}
+```
