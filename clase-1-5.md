@@ -118,3 +118,14 @@ public class Operaciones{
  }
 }
 ```
+## Estructuras condicionales con if-else
+Es una instrucción que ayuda a nuestros programas a saber qué proceso o qué camino debe de seguir dependiendo en la situación que se encuentre.
+Una estructura condicional si no tiene condición no puede ser estructura condicional. No hay camino o proceso que seguir.
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
