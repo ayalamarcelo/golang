@@ -125,7 +125,7 @@ Una estructura condicional si no tiene condición no puede ser estructura condic
 ```mermaid
 graph TD;
     Condición--> Acción B;
-    Acción B --> Acción C;
+    Acción B--> Acción C;
     Acción C--> Acción E;
     Condición-->Acción D;
     Acción D--> Acción E;
