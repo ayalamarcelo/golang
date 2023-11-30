@@ -123,10 +123,13 @@ Es una instrucción que ayuda a nuestros programas a saber qué proceso o qué c
 Una estructura condicional si no tiene condición no puede ser estructura condicional. No hay camino o proceso que seguir.
 
 ```mermaid
-graph TD;
-    Condición-->Acción B;
-    Acción B-->Acción C;
-    Acción C-->Acción E;
-    Condición-->Acción D;
-    Acción D-->Acción E;
+graph TD
+A{Condicional};
+B[Accion B];
+C[Accion C];
+D[Accion D];
+E((Fin));
+
+A --Sí o verdadero--> B --> C --> E;
+A --No o falso--> D --> E; 
 ```
