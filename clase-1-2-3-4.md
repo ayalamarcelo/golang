@@ -25,3 +25,14 @@ Escribimos en el cmd:
 Luego creará el archivo `name.class`.
 Ahora `java name`
 Así se ejecuta un programa desde 0 en java.
+
+## Errores sintáticos y lógicos
+Estandarización: Standard de java, empieza el nombre de neustra clase con Mayúscula.
+
+```java
+public class Error{
+  public static void main(String args[]){
+   System.out.println("Hello world"); 
+ }
+}
+```
