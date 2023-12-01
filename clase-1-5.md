@@ -146,15 +146,15 @@ Uno de los dos caminos va a tener instrucciones el otro no.
 graph TD
 
 A{Condición};
-B[Ejecuta accion B];
-C[Ejecuta accion C];
+B[Ejecuta acción B];
+C[Ejecuta acción C];
 D(Fin, se termina la condición);
 
 A --Sí o verdadero--> B --> C-->D;
 A --No o falso--> D;
 ```
 ## Estructura condicionales compuestas
-Van a tener instrucciones por ambas partes.
+Van a tener instrucciones por ambas partes, es la del primer ejemplo.
 
 ```mermaid
 graph TD
@@ -166,4 +166,59 @@ E(Fin, se termina la condición);
 
 A --Sí o verdadero--> B --> C --> E;
 A --No o falso--> D --> E; 
+```
+### Ejemplo práctico
+
+Realizar un programa que calcule el promedio final de seis materias y que el programa nos indique si el alumno aprobó o reprobó.
+
+Las calificaciones son:
+
+  * Matemáticas: 5
+  * Biología: 8
+  * Química: 4
+
+Nuestro programa va a arrancar `inicio`, una vez que tenga un inicio vamos a utilizar espacios en memoria `calificaciones materias` que son las variables. Estas variables van a contener las calificaciones de las materias. Y esa variables se van a llamar como se llaman las materias. Posteriormente, comenzamos a hacer una análisis, una vez que calculemos el promedio necesitaremos alojar ese promedio en algún lugar. Es por eso que abrimos una nueva variable `Promedio = 0` con valor 0. El 0 es porque al ser un valor que va a utilizar nros enteros tenemos que inicializarla con un valor numerico. En este caso 0 no vale nada. Luego debemos de realizar una pequeña fórmula para calcular el promedio. `Materias  / 3`. Sumar las materias y dividirlo por 3.
+Después de calcular el promedio, comeinza la estructura condicional.
+
+
+```mermaid
+
+graph TD
+
+A{Inicio};
+B[Matemáticas = 5];
+C[Biología = 8];
+D[Química = 7];
+E[Promedio = Mate, Bio, Qui / 3];
+F[Promedio 0];
+G{Promedio >= 6};
+H[El alumno aprobó];
+I[El alumno desaprobó];
+J[Fin];
+
+A --> B --> C --> D --> E --> F --> G;
+G --Si o verdadero--> H;
+G --No o falso --> I;
+H --> J;
+I --> J;
+```
+
+```java
+public clas Promedio{
+  public static void main(String args[]){
+
+   int matematicas = 5;
+   int biologia = 8;
+   int quimica = 7;
+   int promedio = 0;
+
+   promedio = (matematicas + biologia + quimica) / 3;
+   
+   if(promedio >= 6){
+    System.out.println("El alumno aprobó " + promedio); 
+   } else {
+    System.out.println("El alumno desaprobó " + promedio)
+   }
+ }   
+}
 ```
