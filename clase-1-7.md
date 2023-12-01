@@ -204,7 +204,7 @@ I --> J;
 ```
 
 ```java
-public clas Promedio{
+public class Promedio{
   public static void main(String args[]){
 
    int matematicas = 5;
@@ -217,8 +217,77 @@ public clas Promedio{
    if(promedio >= 6){
     System.out.println("El alumno aprobó " + promedio); 
    } else {
-    System.out.println("El alumno desaprobó " + promedio)
+    System.out.println("El alumno desaprobó " + promedio);
    }
  }   
+}
+```
+
+## Estructuras condicionales anidadas con if-else
+Una estrucutra condicional se convierte en anidada cuando está dentro de otra estructura condicional. 
+
+Realizar un programa que pueda realizar una suma, una resta, una multiplicación o una división de dos números enteros, dependiendo de la decisión del usuario:
+  
+    * Si operación es igual a 1, realizar una suma
+    * Si operación es igual a 2, realizar una resta
+    * Si operación es igual a 3, realizar una multiplicación
+    * Si operación es igual a 4, realizar una división
+
+```mermaid
+graph TD
+
+A((INICIO));
+B[Operación = 0];
+C[num_uno = 8];
+D[num_dos = 4];
+E[Resultado];
+F{Operación == 1};
+G{Operación == 2};
+H{Operación == 3};
+I{Operación == 4};
+J[num_uno + num_dos];
+K[num_uno - num_dos];
+L[num_uno * num_dos];
+M[num_uno / num_dos];
+N[La opción que elegiste no existe];
+O[Resultado de la suma];
+P[Resultado de la resta];
+Q[Resultado de la multiplicación];
+R[Resultado de la división];
+S[FIN];
+
+A --> B --> C --> D --> E;
+E --> F --No--> G --No--> H --No--> I --No--> N --> S;
+F --Si--> J --> O --> S;
+G --Si--> K --> P --> S;
+H --Si--> L --> Q --> S;
+I --Si--> M --> R --> S;
+```
+
+```java
+public class Operaciones{
+  public static void main(String args[]){
+   
+   int operacion = 1;
+   int num_uno = 8;
+   int num_dos = 4;
+   int resultado = 0;
+
+   if(operacion == 1){
+     resultado = num_uno + num_dos; 
+     System.out.println("EL resultado de la suma es: " + resultado);
+   } else if(operacion == 2){
+     resultado = num_uno - num_dos;
+     System.out.println("El resultado de la resta es: " + resultado);
+   } else if(operacion == 3){
+    resultado = num_uno * num_dos;
+    System.out.println("El resultado de la multiplicación es " + resultado);   
+   } else if(operacion == 4){
+    resultado = num_uno / num_dos;
+    System.out.println("El resultado de tu división es: " + resultado);
+   } else {
+    System.out.println("La opción que elegiste no existe");
+   }
+ }
 }
 ```
