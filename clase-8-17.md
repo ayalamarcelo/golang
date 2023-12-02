@@ -35,3 +35,13 @@ public class Suma{
 ```
 
 ## Condiciones compuestas con operadores lógicos y relacionales
+
+| Operador | Nombre | Ejemplo | Significado |
+|:--------:|:------:|:-------:|:-----------:|
+| < | Menor que | 5 < 4 | 5 es menor que 4 |
+| > | Mayor que | A > B | A es mayor que B |
+| == | Igual que | 5 == 5 | 5 es igual que 5 |
+| != | No igual a (diferente) | perro != gato | perro no es igual a gato |
+|<= | Menor que o igual a | A <= B | A es menor que o igual |
+|>= | Mayor que o igual a | A >= B | A es mayor que o igual |
+
