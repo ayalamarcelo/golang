@@ -228,10 +228,10 @@ Una estrucutra condicional se convierte en anidada cuando está dentro de otra e
 
 Realizar un programa que pueda realizar una suma, una resta, una multiplicación o una división de dos números enteros, dependiendo de la decisión del usuario:
   
-    * Si operación es igual a 1, realizar una suma
-    * Si operación es igual a 2, realizar una resta
-    * Si operación es igual a 3, realizar una multiplicación
-    * Si operación es igual a 4, realizar una división
+  * Si operación es igual a 1, realizar una suma
+  * Si operación es igual a 2, realizar una resta
+  * Si operación es igual a 3, realizar una multiplicación
+  * Si operación es igual a 4, realizar una división
 
 ```mermaid
 graph TD
