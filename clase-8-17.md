@@ -45,3 +45,76 @@ public class Suma{
 |<= | Menor que o igual a | A <= B | A es menor que o igual |
 |>= | Mayor que o igual a | A >= B | A es mayor que o igual |
 
+## Operadores lógicos
+
+| Operador | Nombre | Ejemplo | Significado | ASCII |
+|:--------:|:------:|:-------:|:-----------:|:-----:|
+| && | And | Haz la tarea && lava la ropa | Haz la tarea y lava la ropa | Alt + 38 |
+| || | Or | Haz la tarea || lava la ropa | Haz la tarea o lava la ropa | Alt + 124 |
+
+> [!note]
+> Práctica propuesta
+
+La empresa **Coca-cola company** solicita que determine los días de vaciones a los que tiene derecho un trabajador, tomando en cuenta las siguientes características:
+
+Existen tres departamentos dentro de la empresa con sus respectivas claves:
+
+1. Departamento de Atención al cliente. (Clave 1)
+2. Departamento de logística. (Clave 2)
+3. Gerencia. (Clave 3)
+
+Trabajadores con **clave 1** (Atención al cliente):
+
+* Con 1 año de servicio, reciben 6 días de vacaciones.
+* Con 2 a 6 años de servicio, reciben 14 días de vacaciones.
+* A partir de 7 años de servicio, reciben 20 días de vaciones.
+
+Trabajadores con **clave 2** (Logística):
+
+* Con 1 año de servicio, reciben 7 días de vacaciones.
+* Con 2 a 6 años de servicio, reciben 15 días de vacaciones.
+* A partir de 7 años de servicio, reciben 22 días de vacaciones.
+
+Trabajadores con **clave 3** (Gerencia):
+
+* Con 1 año de servicio, reciben 10 días de vacaciones.
+* Con 2 a 6 años de servicio, reciben 20 días de vacaciones.
+* A partir de 7 años de servicio, reciben 30 días de vacaciones.
+
+> [!note]
+> El sistema debe de solicitar el "Nombre", "Clave del departamento" y "Antiguedad" del trabajador, posteriormente mostrar un mensaje que contenga el nombre del trabajador y los dias de vacaciones a los que tiene derecho.
+
+**Trabajadores**
+
+* Gerardo clave 3, tiene 3 años de servicio. Merece 20 días de vacaciones.
+* Lui clave 1, tiene 1 año de servicio. Merece 6 días de vacaciones.
+* Félix clave 2, tiene 12 años de servicio. Merece 22 días de vacaciones.
+
+```mermaid
+graph TD
+
+A(INICIO);
+B[String nombre int clave int antiguedad];
+C[Bienvenido al sistema vacacional de Coca-Cola Company];
+D[Se guarda el nombre en la variable nombre];
+E[Cuántos años de servicio tiene el trabajador];
+F[Se guardan los años de servicio en la variable antiguedad];
+G[Cual es la clave de su departamento];
+H{clave == 1};
+I{clave == 2};
+J{clave == 3};
+K[Error, la clave de departamento no existe];
+L(FIN);
+
+
+A --> B --> C --> D --> E --> F --> G;
+G --> H --> L;
+G --> I --> L;
+G --> J --> L;
+
+```
+
+## Sistema de control vacacional
+
+```java
+```
