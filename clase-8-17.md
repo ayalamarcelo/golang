@@ -117,4 +117,31 @@ G --> J --> L;
 ## Sistema de control vacacional
 
 ```java
+import java.util.Scanner;
+
+public class Sistema{
+  public static void main(String args[]){
+    Scanner  entrada = new Scanner(System.in);
+    String nombre = "";
+    int clave = 0, antiguedad = 0;
+    
+    System.out.println("*******************************************************");
+    System.out.println("*Bienvenido al sistema vacacional de Coca Cola Company*");
+    System.out.println("*******************************************************");
+    System.out.println("");
+    System.out.println("");
+
+    System.out.print("Cual es el nombre del trabajador?: ");
+    nombre = entrada.nextLine();
+    System.out.println("");
+
+    System.out.print("Cuanto tiempo de servicio tiene el trabajador?: ");
+    antiguedad = entrada.nextInt();
+    System.out.println("");
+
+    System.out.print("Cual es la clave del trabajador?: ");
+    clave = entrada.nextInt();
+    System.out.println("");
+ }
+}
 ```
