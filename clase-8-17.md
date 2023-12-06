@@ -36,21 +36,21 @@ public class Suma{
 
 ## Condiciones compuestas con operadores lógicos y relacionales
 
-| Operador | Nombre | Ejemplo | Significado |
-|:--------:|:------:|:-------:|:-----------:|
-| < | Menor que | 5 < 4 | 5 es menor que 4 |
-| > | Mayor que | A > B | A es mayor que B |
-| == | Igual que | 5 == 5 | 5 es igual que 5 |
-| != | No igual a (diferente) | perro != gato | perro no es igual a gato |
-|<= | Menor que o igual a | A <= B | A es menor que o igual |
-|>= | Mayor que o igual a | A >= B | A es mayor que o igual |
+| Operador |         Nombre         |    Ejemplo    |       Significado        |
+| :------: | :--------------------: | :-----------: | :----------------------: |
+|    <     |       Menor que        |     5 < 4     |     5 es menor que 4     |
+|    >     |       Mayor que        |     A > B     |     A es mayor que B     |
+|    ==    |       Igual que        |    5 == 5     |     5 es igual que 5     |
+|    !=    | No igual a (diferente) | perro != gato | perro no es igual a gato |
+|    <=    |  Menor que o igual a   |    A <= B     |  A es menor que o igual  |
+|    >=    |  Mayor que o igual a   |    A >= B     |  A es mayor que o igual  |
 
 ## Operadores lógicos
 
-| Operador | Nombre | Ejemplo | Significado | ASCII |
-|:--------:|:------:|:-------:|:-----------:|:-----:|
-| && | And | Haz la tarea && lava la ropa | Haz la tarea y lava la ropa | Alt + 38 |
-| || | Or | Haz la tarea || lava la ropa | Haz la tarea o lava la ropa | Alt + 124 |
+| Operador | Nombre |           Ejemplo            |         Significado         |    ASCII     |
+| :------: | :----: | :--------------------------: | :-------------------------: | :----------: |
+|    &&    |  And   | Haz la tarea && lava la ropa | Haz la tarea y lava la ropa |   Alt + 38   |
+|          |        |                              |             Or              | Haz la tarea |  | lava la ropa | Haz la tarea o lava la ropa | Alt + 124 |
 
 > [!note]
 > Práctica propuesta
@@ -142,6 +142,37 @@ public class Sistema{
     System.out.print("Cual es la clave del trabajador?: ");
     clave = entrada.nextInt();
     System.out.println("");
+
+    if(clave == 1){ 
+
+      if(antiguedad == 1){
+        System.out.println("El trabajador " + nombre + " tiene derecho a 6 dias de vaciones")   
+      } else if(antiguedad >= 2 && antiguedad <= 6) {
+        System.out.print.ln("El trabajor " + nombre + " tiene derecho a 14 dias de vacaciones");
+      } else if(antiguedad >= 7){
+        System.out.print.ln("El trabajador " + nombre + " tiene derecho a 20 dias de vacaciones");
+      }
+    } else if(clave == 2){
+      if(antiguedad == 1){
+        System.out.println("El trabajador " + nombre + " tiene derecho a 7 dias de vaciones")   
+      } else if(antiguedad >= 2 && antiguedad <= 6) {
+        System.out.print.ln("El trabajor " + nombre + " tiene derecho a 15 dias de vacaciones");
+      } else if(antiguedad >= 7){
+        System.out.print.ln("El trabajador " + nombre + " tiene derecho a 22 dias de vacaciones");
+      }
+
+    } else if(clave == 3){
+      if(antiguedad == 1){
+        System.out.println("El trabajador " + nombre + " tiene derecho a 10 dias de vaciones")   
+      } else if(antiguedad >= 2 && antiguedad <= 6) {
+        System.out.print.ln("El trabajor " + nombre + " tiene derecho a 20 dias de vacaciones");
+      } else if(antiguedad >= 7){
+        System.out.print.ln("El trabajador " + nombre + " tiene derecho a 30 dias de vacaciones");
+      }
+
+    } else {
+      System.out.print.ln("Error!, la clave de departamento es incorrecta")
+    }
  }
 }
 ```
