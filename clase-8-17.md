@@ -178,3 +178,113 @@ public class Sistema{
 ```
 
 ## Sistemas de control switch & case
+Un switch-case es una estructura de control que se utiliza para agilizar la toma de decisiones múltiples. Su funcionamiento es muy similar a la de un menú de opciones.
+Con if tengo una estructura condicional, con switch una estructura de control.
+Las opciones dentro se les conoce como `case`. Cuando terminas de escribir las instrucciones correspondientes a case, siempre va un `break`. Se terminó de ejecutar el caso.
+Parámetros: una variable utilizada para recibir valores de entrada.
+Switch en esos parámetros solo permite dos tipos de datos, int y char (entero y caracteres).
+
+```java
+public class Operaciones{
+  public static void main(String args[]){ 
+  int num_uno = 5; num_dos = 3, resultado = 0;
+  int param = 2;
+
+  switch(param){
+
+    case 1: resultado = num_uno + num_dos;
+            System.out.println("El resultado de la suma es: " + resultado);
+            break;
+
+    case 2: resultado = num_uno - num_dos;
+            System.out.println("El resultado de la resta es: " + resultado);
+            break;
+
+    case 3: resultado = num_uno * num_dos;
+            System.out.println("El resultado de la multiplicación es: " + resultado);
+            break;
+
+    case 4: resultado = num_uno / num_dos;
+            System.out.println("El resultado de la división es: " + resultado);
+            break;
+    
+    default: System.out.println("Error, la opción no existe")
+  }
+ }
+}
+```
+
+## Ciclos o Bucles (Estructura repetitiva for)
+Es una estructura repetitiva hasta que la condición propuesta se cumpla.
+
+Condición: "Dar cinco vueltas"
+Intrucción: "Dar un salto"
+Contador: 0
+
+Ejemplo: 5 personas están tomadas de las manos girando. Para establecer un ciclo, debemos establecer una condición que es `Dar cinco vueltas`. Estas personas se toman de las manos y dan cinco vueltas. Posteriormente vamos a darle una `Instrucción` que es `Dar un salto`. Cada vez que termine un giro, deben dar un salto. Así hasta cumplir la condición de la cantidad de vueltas. Contador es donde van a dar los saltos.
+
+En programación, es posible recrear estos ciclos. Para ello tenemos a la estructura repetitiva `for`.
+
+## Estructura repetitiva for
+El for dentro de los parentesis tiene 3 secciones: inicio, la condicion y el incremento. El inicio consiste en poder establecer una variable con un valor de arranque, en este caso estamos diciendo que nuestra variable se llama `i`. Por lo general la variable que se utiliza dentro del `for` es la `i`, porque hace referencia a un indice. Otra cosa que te permite el `for` es que te permite declarar una variable dentro de si mismo. En el ejemplo estamos declarando una variable del tiempo entero y le estamos asignando un valor de arranque de 1. No es obligatorio que se declare la variable dentro, pero si es recomendable. A no ser que necesites declarar la variable por fuera del for. Solo en la primera vuelta del arranque se va a ejecutar esta parte, despues ya no la vuelve a tocar el for. Posteriormente tenemos la condición, es quien establece en que momento se debe detener el `for`. En este momento la condicion estamos indicando que mientras el valor de `i` sea menor o igual a 5, que se siga ejecutando y en el momento que la condición deje de cumplirse. En ese momento ya no va a entrar el for. Y finalmente, tenemos lo que es el incremento, es quizás la parte más importante del for. Porque sin ningún incremento el for jamás va a incrementar y por ende jamás va a cambiar el valor de la variable que estamos utilizando en el arranque. Estos incrementos son muy importantes. En primer lugar, tenemos la forma ++, esto quiere decir que le está indicando a la variable que va a ir incrementando de 1 en 1. Si pones una variable y seguido de esa variable pones ++i. Tu le estás diciendo a la variable que debe incrementar de uno en uno cada vez que pase por esta parte. Ahora si tuvieramos --, le indica que debe restar de uno en uno. Es decir, un `decremento`.
+Ahora que pasa si yo quiero incrementar o decrementar mi variable de 2 en 2 o de 3 en 3. Para eso existe algo que son las variables de **acumulación**. Esas variables te permiten ir acumulando un valor determinado. Por ejemplo, si yo quiero ir incrementando de 2 en 2, debería poner un `i+=` acá estoy indicandole a mi variable que quiero incrementar mis datos, únicamente basta que yo le ponga `i+=2` si yo le pongo un 2, va a incrementar de 2 en 2. Lo mismo con otros valores. Lo mismo para decrementar `i-=2`.
+
+
+```java
+for(inicio; codicion; incremento){
+  Instruccion...
+}
+```
+Ejemplo: Realizar un programa que imprima la siguiente serie numérica:
+
+1, 2, 3, 4, 5,
+
+```java
+for(int i = 1; i <= 5; i ++){
+  System.out.print(i + ", ");
+}
+```
+Impresión en pantalla: 1, 2, 3, 4, 5,
+
+>[!Important]
+> System.out.print(ln) Es para saltos de linea
+
+## Ciclos o Bucles (Estructura repetitiva while)
+En java para poder crear ciclos o bucles también podemos utilizar la estructura repetitiva while, que en español significa "mientras". Para ello, primero debemos entender cuál es su funcionamiento y cómo se comporta esta herramienta repetitiva.
+
+Ejemplo: Realizar un programa que imprima en pantalla la siguiente serie numérica: 1, 3, 5, 7, 9,
+
+```java
+int i = 1;
+
+while(i < 10){
+  System.out.print(i + ", "); /*Imprime todo de forma horizontal*/
+  i+=2;
+}
+```
+Lo primero que tenemos que saber es que siempre que utilizemos la estructura repetitiva `while` siempre la debemos de escribir en minúscula. Posteriormente, entre paréntesis debemos colocar una condición. A diferencia del `for` únicamente puedes poner entre paréntesis una condición, no vale que declares una variable adentro, ni mucho menos que hagamos el incremento adentro. Unicamente debemos de poner una condición. Posteriormente, las llaves de apertura y cierre, que es lo que va a indicar qué debe hacer el while en caso de que sus condición se cumpla. En el ejemplo, le estamos diciendo que mientras `i` sea menos que 10 se cumpla o se ejecute lo que esta dentro de llaves. De lo contrario que no entre y que brinque a la siguiente etapa del programa. Luego de las llaves debemos colocar las intrucciones `System.out.print(i + ", ");` según el ejemplo. En esta ocasión solo estamos mandando a imprimir el valor de i y concatenamos una coma y un espacio. Y finalmente, siempre debemos de colocar el incremento dentro del `while` ahora este incremento no importa si lo pones al principio o al final, pero sí se debe tener cuidado, depende de donde se ponga,  el comportamiento o el resultado que te arroje el programa. Por ejemplo, no es lo mismo que me va imprimir si ponemos `i+=2;` este incremento abajo que arriba, nos mandaría un resultado totalmente diferente.
+
+En el for podíamos declarar la variable dentro, pero en while no nos permite eso, por eso siempre hay que declararla antes de indicar que vamos a utilizar un while. En esta ocasión estamos indicando que queremos una variable del tipo entero que se llama i y que va a iniciar con un valor de 1. Este valor es porque la consigna nos indica que el primer valor que se debe de imprimir en pantalla es el 1. Una vez que el programa ya inició, ahora si entra en la parte de while.
+
+## Ciclos o Bucles (Estructura repetitiva do-while)
+Para poder realizar ciclos o bucles tenemos una última estructura repetitiva que es do-while. Que por su traducción al español es hacer y mientras. 
+Esta estructura se divide en dos secciones: la parte en donde le vamos a decir qué instrucciones debe de realizar y la parte de las condiciones que es donde nosotros vamos a poder controlar en qué momento se debe de detener este ciclo.
+
+```java
+do{
+  intrucciones...
+} while(condición);
+```
+Nosotros cuando usamos do-while primero vamos a escribir la palabra do en minúsculas, aplicación de llaves apertura y cierre. Dentro la instrucción que queremos que se ejecute. Posteriormente, fuera de las llaves debemos colocar while y después entre paréntesis la condición que se debe cumplir para que el ciclo se sigue ejecutando.
+
+Ejemplo:
+
+Realizar un programa que imprima en pantalla la siguiente serie numérica: 1000, 800, 600, 400, 200, 0, /*Va en decremento*/
+
+```java
+int i = 1000;
+do{
+  System.out.print(i + ", ");
+  i-=200;
+} while(i>=0);
+```
