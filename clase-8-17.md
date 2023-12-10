@@ -349,7 +349,6 @@ public class CiclosDos{
  }
 }
 ```
-
-## Sucesión de fibonacci
+## Sucesión de Fibonacci
 
 
