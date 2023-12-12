@@ -354,4 +354,30 @@ Realizar un programa que imprima en pantalla la sucesión fibonacci utiluando la
 
 * 0, 1, 1, 2, 3, 5, 8, 13, 21, 34
 
+```java
+
+int a = 0, b = 1, c = 0;
+for(int i = 0; i < 10; i++){
+  System.out.print(a + ",");
+  c = a + b;
+  a = b;
+  b = c;
+}
+
+i = 0
+a = 0
+b = 1
+c = 0
+```
+>[!Important]
+> En esta serie numerica se suman los dos valores previos al siguiente valor.
+
+>[!Note]
+> Debe comenzar a imprimirse con 0. La suma de los dos valores anteriores llevan al siguiente valor. Y en tercer lugar, unicamente nos estan solicitando que lleguemos hasta le valor 34.
+
+Cuando comience a correr el programa va a detectar que estamos declarando: a, b, c. Cada una de ellas inicia con un valor de arranque. Fibonacci, nos pide que los dos primeros valores deben ser 0 y 1. También quedamos en que para poder obtener el siguiente valor, tenemos que sumar los dos valores anteriores. En este caso, el 0 y el 1. Y cuando tu haces una operación sabemos exactamente que debemos de tener una tercer variable donde alojar ese resultado. Para eso se declara c, c se va a encargar de guardar el valor de la suma entre a y b.
+Posteriormente, va a entrar a la parte del `for` tengo una estructura que me está indicando hacer lo siguiente: Voy a declarar una variable dentro del mismo for que sea del tipo entero que se llame i y tenga un valor de 0. Luego va a entrar la condición, cuánto vale i, i vale 0, entonces se va a preguntar 0 es menor a < 10. En ese momento van a entrar las instrucciones. La primera instrucción es que se debe imprimir en pantalla sin salto de línea el valor de a concatenadole una coma. Un avez que hicimos esto va a entrar a la siguiente etapa. Y nos dice que tenemos que sumar los valores de `a + b` y guardarlo en la variable `c`. Cuánto vale `a` en este momento, `a` vale 0. y `b` vale 1. Al hacer esta instrucción le estamos diciendo que debe sumar el valor de a + b qu es 0 + 1. El nuevo valor de `c` es 1. Ahora al pasar a la otra etapa nos vamos a encontrar con que tenemos una instrucción de asignación. En este ejemplo: que el valor de `b`debe pasar a la variable `a`. Lo mismo va a suceder con el valor de `c` que ahora debe pasar a la variable `b`. Ahora va a pasar a la parte de los incrementos, después de esto nos indica que debemos incrementar el valor de la variable i de 1 en 1. Entonces cuánto vale i, i vale 0, con el incremento ahora va a valer 1 porque estamos diciendo que debe incrementar de 1 en 1 cada vez que pase por la parte de incrementos. Una vez que salga de incremento va a volver a la parte de la condición, i en este momento vale 1, es menor que 10, sí, por ende sigue a la parte de instrucciones. Debe imprimir el valor de a seguido de la concatenación de la coma y luego a la parte de incrementos. 
+
+
+Salida en pantalla: 0, 1, 1, 2, ...
 
