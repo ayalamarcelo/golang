@@ -350,5 +350,8 @@ public class CiclosDos{
 }
 ```
 ## Sucesión de Fibonacci
+Realizar un programa que imprima en pantalla la sucesión fibonacci utiluando las estructuras repetitivas: for, while y do-while.
+
+* 0, 1, 1, 2, 3, 5, 8, 13, 21, 34
 
 
