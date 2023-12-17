@@ -52,4 +52,52 @@ Método **substring** -> permite obtener una parte en específico de la cadena d
 
 A diferencia del método lenght, al método substring hay que indicarle desde qué punto hay que punto hasta qué punto queremos hacer dicho corte.
 
-## Ejercicio
+## Arreglos unidimensionales (Vectores)
+Un arreglo es una estructura de datos que almacena bajo el mismo nombre a una colección de datos. Un arreglo está seccionado o divido en varias partes.
+
+Lista de alumnos --> Nombre de la colección de datos
+
+| # de Lista | Nombre |
+|:----------:|:------:|
+| 1 | Juan |
+| 2 | Guillermo |
+| 3 | Ana |
+| 4 | Luis |
+
+<-- Colección de datos 
+
+## Los arreglos se caracterizan por:
+
+1. Almacenar los elementos en posiciones contiguas de memoria.
+2. Tienen un mismo nombre de variable que representa a todos los elementos.
+3. Los elementos son asignados a una posición dentro del vector.
+4. Los arreglos trabajan en conjunto con índices que especifican la posición de cada elemento dentro del arreglo.
+
+| # de Lista | Nombre |
+|:----------:|:------:|
+| 1 | Juan | --> Posición 1
+| 2 | Guillermo | --> Posición 2
+| 3 | Ana | --> Posición 3
+| 4 | Luis | --> Posición 4
+
+Esta flecha es un índice que indica la posición del elemento.
+
+## Tipos de arreglos
+* Tenemos dos tipos de arreglos
+
+1. Arreglos unidimensionales mejor conocidos como "Vectores".
+
+| | | | | | |
+
+2. Arreglos bidimensionales mejor conocidos como "Matrices".
+
+| | | | |
+| | | | |
+| | | | |
+| | | | |
+
+## Vectores (Arreglos unidimensionales)
+
+Representación gráfica de un Vector:
+
+| | | | | |
