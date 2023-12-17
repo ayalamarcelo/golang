@@ -87,17 +87,20 @@ Esta flecha es un índice que indica la posición del elemento.
 
 1. Arreglos unidimensionales mejor conocidos como "Vectores".
 
-| | | | | | |
+| v | v | v | v | v | v |
+|---|---|---|---|---|---|
 
 2. Arreglos bidimensionales mejor conocidos como "Matrices".
 
-| | | | |
-| | | | |
-| | | | |
-| | | | |
+| v | v | v | v |
+|---|---|---|---|
+| v | v | v | v |
+| v | v | v | v |
+| v | v | v | v |
 
 ## Vectores (Arreglos unidimensionales)
 
 Representación gráfica de un Vector:
 
-| | | | | |
+| v | v | v | v | v |
+|---|---|---|---|---|
