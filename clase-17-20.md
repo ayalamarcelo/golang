@@ -102,5 +102,10 @@ Esta flecha es un índice que indica la posición del elemento.
 
 Representación gráfica de un Vector:
 
-| v | v | v | v | v |
-|---|---|---|---|---|
+| Juan | Guillermo | Ana | Luis | Pedro |
+|:----:|:---------:|:---:|:----:|:-----:|
+
+>[!Note]
+> Se le llama unidimensional porque es una lista de una sola dimensión. Es decir, solo podemos guardar datos de atras hacia adelante o de adelante hacia atras.
+
+1:29
