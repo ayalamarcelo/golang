@@ -108,4 +108,65 @@ Representación gráfica de un Vector:
 >[!Note]
 > Se le llama unidimensional porque es una lista de una sola dimensión. Es decir, solo podemos guardar datos de atras hacia adelante o de adelante hacia atras.
 
-1:29
+Su longitud o tamaño depende del número de posiciones que nosotros le asignamos al momento de declarar el vector. Por ejemplo, este vector cuenta con 5 posiciones, aunque tenga 5 posiciones. Siempre la posición inicial de un vector debe de ser cero independientemente del nro de posiciones que contenga y estas posiciones incrementa de 1 en 1 hasta llegar a la posición final. Es por eso que la última posición de este vector es 4, aunque el nro total de posiciones en de 5.
+
+| Posición 0 (inicial) | Posición 1 | Posición 2 | Posición 3 | Posición 4 (final) |
+| Juan | Guillermo | Ana | Luis | Pedro |
+|:----:|:---------:|:---:|:----:|:-----:|
+
+>[!Note]
+> Esta divido en 5 seccciones y a cada sección se le conoce como posición.
+
+## Indice de un Vector
+Los vectores trabajan en conjunto con un índice que se representa gráficamente con una fecha, las cuales necesitan ser declaradas como una variable del tipo entero y por consecuencia deben de tener un nombre y un valor de arranque o inicio.
+
+
+Tipo de dato del índice[int]
+Nombre del índice[indice_uno]
+Valor inicial del índice[0]
+
+`int indice_uno = 0;`
+
+Este índice nos ayuda a recorrer todo el arreglo tanto de ida como de vuelta.
+
+     | Posición  0 |
+     |:-----------:|
+     | Juan | <- Indice
+
+Con la finalidad de consultar, modificar, eliminar o insertar algún elemento en cualquiera de las posiciones del lector.
+
+## Sintaxis y pasos para programar un vector
+Al igual que una variable, un vector hay que declararlo e indicarle lo siguiente: 
+
+En primer lugar el tipo de datos que vamos a manejar. Cuando todos los tipos ingresen deberan de ser del mismo tipo de dato. Posteriormente hay que asignarle un nombre. Una vez asignado el nombre agregamos un par de corchetes [], luego inicializar el vector por lo que debemos agregarle un signo de igual. Escribimos la palabra `new` seguido nuevamente del tipo de dato que vamos a utilizar para nuestro vector, seguido de otro par de corchetes. Dentro el nro de posiciones que deseamos que contenga nuestro vector.
+
+`int nombre[] = new int [5];`
+
+* Introducir datos a nuestro vector
+  
+Para introducir elementos o datos a nuestro vector debemos de apoyarnos en el índice que acompaña a nuestro vector. Este índice tiene dos tipos de comportamiento. Un comportamiento estático y un comportamiento dinámico.
+Un índice con comportamiento estático no es necesario declararlo ya que basta con indicar el nombre y la posición del vector a donde queremos que se dirija nuestro índice, esto quiere decir que no se moverá de su posición actual a no ser que nosotros le indiquemos de manera manual. Es decir, que escribamos una línea de código que le indique al indice que se debe de mover a una determinada posición.
+
+`numeros[2] = 8;`
+
+Nombre del vector[numeros]
+Posición del vector[2]
+Elemento a guardar[8]
+
+Queremos guardar el elemento 8 en el vector numeros en la posición 2.
+
+* Imprimir datos de un vector
+
+Para imprimir solo utilizamos:
+
+`System.out.println(numero[3]);`
+
+Y dentro del paréntesis debemos de colocar el nombre del vector junto con la posición que queremos mostrar.
+
+**Ejercicio**
+Crear un vector de cinco posiciones, posteriormente guardar un número en cada una de las posiciones del vector, y finalmente imprimir en pantalla cada una de las posiciones para verificar que se hayan guardado los números de manera correcta.
+
+
+
+
+
