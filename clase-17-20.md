@@ -166,7 +166,26 @@ Y dentro del paréntesis debemos de colocar el nombre del vector junto con la po
 **Ejercicio**
 Crear un vector de cinco posiciones, posteriormente guardar un número en cada una de las posiciones del vector, y finalmente imprimir en pantalla cada una de las posiciones para verificar que se hayan guardado los números de manera correcta.
 
+## Arreglos unidimensionales (Vectores dinámcos)
+En java un vector dinámico a diferencia de un vector estático, no requiere que le indiques al índice que posición o en qué posición se debe recorrer, ya que esto lo va a hacer de manera automática, tanto la ida como el regreso. Lo cual vamos a lograr con la ayuda de una estructura repetitiva for.
+Esta estructura repetitiva es la que se usa generalmente cuando utilizas o trabajas con vectores en java, ya que esta estructura repetitiva nos permite declarar el índice dentro de su mismo cuerpo a diferencia de un while o dowhile que nosotros no podemos hacer esto, tendríamos que indicarlo dentro de las instrucciones. Resulta más cómodo utilizar una estructura repetitiva for para trabajar con vectores dinámicos.
 
+int numeros[] = newint[5];
+               0         5        0
+for(int i = 0; i < numeros.lenght; i++){
+     numeros[i] = i + 10;
+}
 
+| Posición 0 | Posición 1 | Posición 2 | Posición 3 | Posición 4 |
+|:----------:|:----------:|:----------:|:----------:|:----------:|
+| null | null | null | null | null |
 
+Cuando tu creas o declaras un vector, tu le indicas el número de posiciones que va  a tener. En este caso en el ejemplo le estamos indicando que va a tener 5 posiciones. Pero cuando lo creas esta es la representación gráfica. Null es que no hay o existe nada. Te indica que está totalmente.
 
+lenght: Nos ayuda a saber la longitud de dicha cadena, sirve para strings y vectores. Con ello sabemos número o tamaño que tiene dicho arreglo.
+Con ayuda del método lenght, yo le digo que `numero.lenght` sin importar el número de posiciones que tenga mi arreglo o en este caos mi vector. Voy a saber la longitud de dicho lector. 
+
+## Ejercicio
+Realizar un programa que contenga un vector cuya longitud sea proporcionado por el usuario, posteriormente solicitar al usuario los números necesarios para llenar todas las posiciones del vector, es decir, si el usuario solicitó un arreglo de 10 posiciones, entonces el programa deberá de solicitarle al usuario 10 números, y finalmente se debe de imprimir el arreglo en pantalla de la siguiente manera:
+
+[5] [54] [12] [65] [6] [54] [897]
