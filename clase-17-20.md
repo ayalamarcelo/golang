@@ -189,3 +189,5 @@ Con ayuda del método lenght, yo le digo que `numero.lenght` sin importar el nú
 Realizar un programa que contenga un vector cuya longitud sea proporcionado por el usuario, posteriormente solicitar al usuario los números necesarios para llenar todas las posiciones del vector, es decir, si el usuario solicitó un arreglo de 10 posiciones, entonces el programa deberá de solicitarle al usuario 10 números, y finalmente se debe de imprimir el arreglo en pantalla de la siguiente manera:
 
 [5] [54] [12] [65] [6] [54] [897]
+
+## 
