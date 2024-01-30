@@ -1,35 +1,41 @@
-# Introducción e instalación de JDK
-**JAVA**
-Es un lenguaje de programación orientado a objetos multiplataforma.
-Para programar en JAVA necesitamos:
+###
 
-   * Descargar el JDK.
-   * Bloc de notas y CMD.
+<h1 align="center">Introducción a Java</h1>
 
-> [!note] 
-> Al no programar con editores profesionales o entornos de desarrollo (IDE), la retención de sintaxis es mayor y el desarrollo de la habilidad incrementa bastante al no tener ayuda.
+###
 
-> [!note] 
-> Minecraft, OpenOffice y Android se desarrollaron en JAVA.
+- [Indentado, compilación y ejecución del código](#indentado-compilación-y-ejecución-del-código)
+- [Errores sintáticos y lógicos](#errores-sintáticos-y-lógicos)
+- [Variables y tipos de datos](#variables-y-tipos-de-datos)
+- [Variables](#variables)
+- [Operadores aritméticos y prioridad de los signos](#operadores-aritméticos-y-prioridad-de-los-signos)
+- [Prioridad entre operadores](#prioridad-entre-operadores)
+- [Estructuras condicionales con if-else](#estructuras-condicionales-con-if-else)
+- [Estructuras condicionales simples](#estructuras-condicionales-simples)
+- [Estructura condicionales compuestas](#estructura-condicionales-compuestas)
+  - [Ejemplo práctico](#ejemplo-práctico)
+- [Estructuras condicionales anidadas con if-else](#estructuras-condicionales-anidadas-con-if-else)
 
 
-```cmd
-java -version
-```
+
 ## Indentado, compilación y ejecución del código
-El código se debe de leer de arriba hacia abajo y de derecha a izquierda.
-La primera línea que debemos escribir es el nombre de nuestra clase. En java necesitamos de clases para poder ejecutar un programa y esa clase es la que va a contener el código que nosotros vamos a escribir. El método main es donde va a dar inicio tu programa. Lo que va a permitir que lo podamos ejecutar.
+El código se debe de leer de arriba hacia abajo y de derecha a izquierda. La primera línea que debemos escribir es el nombre de nuestra clase. En java necesitamos de clases para poder ejecutar un programa y esa clase es la que va a contener el código que nosotros vamos a escribir. El método main es donde va a dar inicio tu programa. Lo que va a permitir que lo podamos ejecutar.
 
 > [!note]
 > Los archivos java se guardan con el mismo nombre de la clase.
 
-Con Java necesitamos un compilador `javac`, esto lo traduce.
-Escribimos en el cmd:
-`javac name.java`
-Luego creará el archivo `name.class`.
-Ahora `java name`.
-Así se ejecuta un programa desde 0 en java.
-
+```bash
+# Con Java necesitamos un compilador 
+javac
+# esto lo traduce.
+# Escribimos en el cmd:
+javac name.java
+# Luego creará el archivo 
+name.class
+# Ahora 
+java name
+# Así se ejecuta un programa desde 0 en java.
+```
 ## Errores sintáticos y lógicos
 Estandarización: Standard de java, empieza el nombre de nuestra clase con mayúscula.
 
@@ -44,39 +50,37 @@ Un error lógico se pueden causar por dos errores: error lógico del código o e
 Errores sintácticos: falta de punto y coma, que hayas puesto mal un paréntesis, mal el nombre de una variable. Un programa no se va a poder ejecutar si no corriges los errores.
 *Aprender a leer errores*
 
-## Variables y tipos de datos en JAVA
+## Variables y tipos de datos
 **Primitivos**
 *Enteros*
 
-  * byte (-128 hasta 127)
-  * short (-32,768 hasta 32,767)
-  * int (-2,147,483,648 hasta 2,147,483,647)
-  * long (muy grande...)
+   - byte (-128 hasta 127)
+   - short (-32,768 hasta 32,767)
+   - int (-2,147,483,648 hasta 2,147,483,647)
+   - long (muy grande...)
 
 **Decimales** (nos permiten alojar valores con punto decimal)
    
-   * float
-   * double
+   - float
+   - double
 
 **Otros**
 
-   * char (un solo caracter)
-   * booleand (true/false)
+   - char (un solo caracter)
+   - booleand (true/false)
 
 **Tipos objeto** (son clases)
 
-   * String, ejemplo 'Hola mundo'.
+   - String, ejemplo 'Hola mundo'.
 
 ## Variables
-Una variable es un espacio en memoria donde nosotros vamos a poder alojar información o datos ya sean de tipos numérico o de tipo texto.
-Para que nosotros declaremos una variable, necesitamos de dos elementos. En primer lugar, necesitamos de un `tipo` de dato y el segundo necesitamos de un `nombre`. Con el tipo de dato le vamos a decir al espacio en memoria qué tipo de información o dato va a recibir. Con el nombre vamos a decirle a nuestro programa a que variable o espacio en memoria estamos haciendo referencia. 
+Una variable es un espacio en memoria donde nosotros vamos a poder alojar información o datos ya sean de tipos numérico o de tipo texto. Para que nosotros declaremos una variable, necesitamos de dos elementos. En primer lugar, necesitamos de un `tipo` de dato y el segundo necesitamos de un `nombre`. Con el tipo de dato le vamos a decir al espacio en memoria qué tipo de información o dato va a recibir. Con el nombre vamos a decirle a nuestro programa a que variable o espacio en memoria estamos haciendo referencia. 
 
-Ejemplo:
+**Ejemplo:**
 `Tipo: int nombre: numUno`
 Programamos una suma:
 
 ```java
-
 public class Suma{
   public static void main(String args[]){
  
@@ -91,6 +95,9 @@ public class Suma{
 ```
 
 ## Operadores aritméticos y prioridad de los signos
+
+<div aling="center">
+
 | **Signo** | **Nombre del Signo** | **Tipo de operación** | **Código ASCII** |
 |:-------:|:------------------:|:-------------------:|:-------------:|
 | **+** | Más | Suma | **ALT + 43** |
@@ -101,12 +108,13 @@ public class Suma{
 | **(** | Paréntesis apertura | Prioridad entre operaciones | **ALT + 40** |
 | **)** | Paréntesis cierre | Prioridad entre operaciones | **ALT + 41** |
 
+</div>
+
 ## Prioridad entre operadores
 Cuando tu realizas una operación en matemáticas o en programación, existe una piramide donde se va a ejecutar de arriba hacia abajo. Cuando nosotros programemos o realizemos una operación siempre se va a resolver lo que está dentro de `()`, posteriormente va a buscar `^` y si posteriormente no encuentra, seguirá con `*, /`, por último `+ y -`. Siempre esta va a ser la prioridad.
-Ejemplo:
+**Ejemplo:**
 
 ```java
-
 public class Operaciones{
   public static void main(String args[]){
  
@@ -177,16 +185,15 @@ Realizar un programa que calcule el promedio final de seis materias y que el pro
 
 Las calificaciones son:
 
-  * Matemáticas: 5
-  * Biología: 8
-  * Química: 4
+  - Matemáticas: 5
+  - Biología: 8
+  - Química: 4
 
 Nuestro programa va a arrancar `inicio`, una vez que tenga un inicio vamos a utilizar espacios en memoria `calificaciones materias` que son las variables. Estas variables van a contener las calificaciones de las materias. Y esa variables se van a llamar como se llaman las materias. Posteriormente, comenzamos a hacer una análisis, una vez que calculemos el promedio necesitaremos alojar ese promedio en algún lugar. Es por eso que abrimos una nueva variable `Promedio = 0` con valor 0. El 0 es porque al ser un valor que va a utilizar nros enteros tenemos que inicializarla con un valor numerico. En este caso 0 no vale nada. Luego debemos de realizar una pequeña fórmula para calcular el promedio. `Materias  / 3`. Sumar las materias y dividirlo por 3.
 Después de calcular el promedio, comeinza la estructura condicional.
 
 
 ```mermaid
-
 graph TD
 
 A{Inicio};
@@ -232,10 +239,10 @@ Una estrucutra condicional se convierte en anidada cuando está dentro de otra e
 
 Realizar un programa que pueda realizar una suma, una resta, una multiplicación o una división de dos números enteros, dependiendo de la decisión del usuario:
   
-  * Si operación es igual a 1, realizar una suma
-  * Si operación es igual a 2, realizar una resta
-  * Si operación es igual a 3, realizar una multiplicación
-  * Si operación es igual a 4, realizar una división
+  - Si operación es igual a 1, realizar una suma
+  - Si operación es igual a 2, realizar una resta
+  - Si operación es igual a 3, realizar una multiplicación
+  - Si operación es igual a 4, realizar una división
 
 ```mermaid
 graph TD
