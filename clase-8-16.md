@@ -1,4 +1,24 @@
-# Como introducir datos desde el teclado con scanner
+###
+
+<h1 align="center">introducción a Java</h1>
+
+###
+
+## Tabla de contenidos:
+
+- [Como introducir datos desde el teclado con scanner](#como-introducir-datos-desde-el-teclado-con-scanner)
+- [Condiciones compuestas con operadores lógicos y relacionales](#condiciones-compuestas-con-operadores-lógicos-y-relacionales)
+- [Operadores lógicos](#operadores-lógicos)
+- [Sistema de control vacacional](#sistema-de-control-vacacional)
+- [Sistemas de control switch \& case](#sistemas-de-control-switch--case)
+- [Ciclos o Bucles (Estructura repetitiva for)](#ciclos-o-bucles-estructura-repetitiva-for)
+- [Estructura repetitiva for](#estructura-repetitiva-for)
+- [Ciclos o Bucles (Estructura repetitiva while)](#ciclos-o-bucles-estructura-repetitiva-while)
+- [Ciclos o Bucles (Estructura repetitiva do-while)](#ciclos-o-bucles-estructura-repetitiva-do-while)
+- [Ejercicios para el desarrollo de la lógica](#ejercicios-para-el-desarrollo-de-la-lógica)
+- [Sucesión de Fibonacci](#sucesión-de-fibonacci)
+
+## Como introducir datos desde el teclado con scanner
 Cuando comenzamos a programar en ocasiones requerimos interactuar con el usuario. Que nuestro programa le permita al usuario introducir datos desde el teclado. Vamos a diseñar un programa donde le pida tanto su nombre y números para poder sumarlos. Para esto vamos a utilizar una librería `Scanner`.
 Conjunto de códigos escritos por alguien más. Para poder hacer uso de estas librerías, debemos importarlas.
 Scanner es una sublibreria que nos permite poner datos. Para hacerlos más dinámico.
@@ -50,7 +70,8 @@ public class Suma{
 | Operador | Nombre |           Ejemplo            |         Significado         |    ASCII     |
 | :------: | :----: | :--------------------------: | :-------------------------: | :----------: |
 |    &&    |  And   | Haz la tarea && lava la ropa | Haz la tarea y lava la ropa |   Alt + 38   |
-|          |        |                              |             Or              | Haz la tarea |  | lava la ropa | Haz la tarea o lava la ropa | Alt + 124 |
+|          |        |                              |             Or              | Haz la tarea |  
+| lava la ropa | Haz la tarea o lava la ropa | Alt + 124 |
 
 > [!note]
 > Práctica propuesta
@@ -81,7 +102,6 @@ Trabajadores con **clave 3** (Gerencia):
 * Con 2 a 6 años de servicio, reciben 20 días de vacaciones.
 * A partir de 7 años de servicio, reciben 30 días de vacaciones.
 
-> [!note]
 > El sistema debe de solicitar el "Nombre", "Clave del departamento" y "Antiguedad" del trabajador, posteriormente mostrar un mensaje que contenga el nombre del trabajador y los dias de vacaciones a los que tiene derecho.
 
 **Trabajadores**
@@ -370,7 +390,7 @@ b = 1
 c = 0
 ```
 >[!Important]
-> En esta serie numerica se suman los dos valores previos al siguiente valor.
+> En esta serie numérica se suman los dos valores previos al siguiente valor.
 
 >[!Note]
 > Debe comenzar a imprimirse con 0. La suma de los dos valores anteriores llevan al siguiente valor. Y en tercer lugar, unicamente nos estan solicitando que lleguemos hasta le valor 34.

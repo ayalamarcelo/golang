@@ -4,6 +4,9 @@
 
 ###
 
+## Tabla de contenidos:
+
+- [Tabla de contenidos:](#tabla-de-contenidos)
 - [Indentado, compilación y ejecución del código](#indentado-compilación-y-ejecución-del-código)
 - [Errores sintáticos y lógicos](#errores-sintáticos-y-lógicos)
 - [Variables y tipos de datos](#variables-y-tipos-de-datos)
@@ -178,7 +181,7 @@ E(Fin, se termina la condición);
 A --Sí o verdadero--> B --> C --> E;
 A --No o falso--> D --> E; 
 ```
-<h2 aling="center">Ejemplo práctico</h2>
+<h2 align="center">Ejemplo práctico</h2>
 
 Realizar un programa que calcule el promedio final de seis materias y que el programa nos indique si el alumno aprobó o reprobó.
 

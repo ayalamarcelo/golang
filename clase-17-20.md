@@ -1,4 +1,28 @@
-# Cadenas de caracteres con el método equals
+###
+
+<h1 align="center">Introducción a Java</h1>
+
+###
+
+## Tabla de contenidos
+- [Cadenas de caracteres con el método equals](#cadenas-de-caracteres-con-el-método-equals)
+- [Declarar una variable](#declarar-una-variable)
+- [Comparar valores](#comparar-valores)
+- [Ejercicio](#ejercicio)
+- [Manipulación de cadenas con los métodos lenght() y substring()](#manipulación-de-cadenas-con-los-métodos-lenght-y-substring)
+- [Método lenght y método substring](#método-lenght-y-método-substring)
+- [Arreglos unidimensionales (Vectores)](#arreglos-unidimensionales-vectores)
+- [Los arreglos se caracterizan por:](#los-arreglos-se-caracterizan-por)
+- [Tipos de arreglos](#tipos-de-arreglos)
+- [Vectores (Arreglos unidimensionales)](#vectores-arreglos-unidimensionales)
+- [Indice de un Vector](#indice-de-un-vector)
+- [Sintaxis y pasos para programar un vector](#sintaxis-y-pasos-para-programar-un-vector)
+- [Arreglos unidimensionales (Vectores dinámcos)](#arreglos-unidimensionales-vectores-dinámcos)
+- [Ejercicio](#ejercicio-1)
+- [](#)
+
+
+## Cadenas de caracteres con el método equals
 Es una secuencia de caracteres que pueden contener símbolos letras o números. 
 
 **String** --> Permite declarar variables para alojar cadenas de caracteres (Texto).
