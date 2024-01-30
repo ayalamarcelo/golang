@@ -13,7 +13,6 @@
 - [Estructuras condicionales con if-else](#estructuras-condicionales-con-if-else)
 - [Estructuras condicionales simples](#estructuras-condicionales-simples)
 - [Estructura condicionales compuestas](#estructura-condicionales-compuestas)
-  - [Ejemplo práctico](#ejemplo-práctico)
 - [Estructuras condicionales anidadas con if-else](#estructuras-condicionales-anidadas-con-if-else)
 
 
@@ -179,7 +178,7 @@ E(Fin, se termina la condición);
 A --Sí o verdadero--> B --> C --> E;
 A --No o falso--> D --> E; 
 ```
-### Ejemplo práctico
+<h2 aling="center">Ejemplo práctico</h2>
 
 Realizar un programa que calcule el promedio final de seis materias y que el programa nos indique si el alumno aprobó o reprobó.
 
@@ -191,28 +190,6 @@ Las calificaciones son:
 
 Nuestro programa va a arrancar `inicio`, una vez que tenga un inicio vamos a utilizar espacios en memoria `calificaciones materias` que son las variables. Estas variables van a contener las calificaciones de las materias. Y esa variables se van a llamar como se llaman las materias. Posteriormente, comenzamos a hacer una análisis, una vez que calculemos el promedio necesitaremos alojar ese promedio en algún lugar. Es por eso que abrimos una nueva variable `Promedio = 0` con valor 0. El 0 es porque al ser un valor que va a utilizar nros enteros tenemos que inicializarla con un valor numerico. En este caso 0 no vale nada. Luego debemos de realizar una pequeña fórmula para calcular el promedio. `Materias  / 3`. Sumar las materias y dividirlo por 3.
 Después de calcular el promedio, comeinza la estructura condicional.
-
-
-```mermaid
-graph TD
-
-A{Inicio};
-B[Matemáticas = 5];
-C[Biología = 8];
-D[Química = 7];
-E[Promedio = Mate, Bio, Qui / 3];
-F[Promedio 0];
-G{Promedio >= 6};
-H[El alumno aprobó];
-I[El alumno desaprobó];
-J[Fin];
-
-A --> B --> C --> D --> E --> F --> G;
-G --Si o verdadero--> H;
-G --No o falso --> I;
-H --> J;
-I --> J;
-```
 
 ```java
 public class Promedio{
@@ -243,37 +220,6 @@ Realizar un programa que pueda realizar una suma, una resta, una multiplicación
   - Si operación es igual a 2, realizar una resta
   - Si operación es igual a 3, realizar una multiplicación
   - Si operación es igual a 4, realizar una división
-
-```mermaid
-graph TD
-
-A((INICIO));
-B[Operación = 0];
-C[num_uno = 8];
-D[num_dos = 4];
-E[Resultado];
-F{Operación == 1};
-G{Operación == 2};
-H{Operación == 3};
-I{Operación == 4};
-J[num_uno + num_dos];
-K[num_uno - num_dos];
-L[num_uno * num_dos];
-M[num_uno / num_dos];
-N[La opción que elegiste no existe];
-O[Resultado de la suma];
-P[Resultado de la resta];
-Q[Resultado de la multiplicación];
-R[Resultado de la división];
-S[FIN];
-
-A --> B --> C --> D --> E;
-E --> F --No--> G --No--> H --No--> I --No--> N --> S;
-F --Si--> J --> O --> S;
-G --Si--> K --> P --> S;
-H --Si--> L --> Q --> S;
-I --Si--> M --> R --> S;
-```
 
 ```java
 public class Operaciones{
