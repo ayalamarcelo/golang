@@ -1,10 +1,10 @@
 ###
 
-<h1 align="center">introducción a Java</h1>
+<h1 align="center">Programación con Java</h1>
 
 ###
 
-## Tabla de contenidos:
+<h2 align="left">Tabla de contenidos:</h2>
 
 - [Como introducir datos desde el teclado con scanner](#como-introducir-datos-desde-el-teclado-con-scanner)
 - [Condiciones compuestas con operadores lógicos y relacionales](#condiciones-compuestas-con-operadores-lógicos-y-relacionales)
@@ -69,9 +69,8 @@ public class Suma{
 
 | Operador | Nombre |           Ejemplo            |         Significado         |    ASCII     |
 | :------: | :----: | :--------------------------: | :-------------------------: | :----------: |
-|    &&    |  And   | Haz la tarea && lava la ropa | Haz la tarea y lava la ropa |   Alt + 38   |
-|          |        |                              |             Or              | Haz la tarea |  
-| lava la ropa | Haz la tarea o lava la ropa | Alt + 124 |
+|    &&    |  And   | Haz la tarea && lava la ropa | Haz la tarea y lava la ropa | Alt + 38  |
+|   (||)   |   Or   | Haz la tarea (||) lava la ropa | Haz la tarea o lava la ropa | Alt + 124 |
 
 > [!note]
 > Práctica propuesta

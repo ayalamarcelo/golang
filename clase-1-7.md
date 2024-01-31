@@ -1,12 +1,11 @@
 ###
 
-<h1 align="center">Introducción a Java</h1>
+<h1 align="center">Programación con Java</h1>
 
 ###
 
-## Tabla de contenidos:
+<h2 align="left">Tabla de contenidos:</h2>
 
-- [Tabla de contenidos:](#tabla-de-contenidos)
 - [Indentado, compilación y ejecución del código](#indentado-compilación-y-ejecución-del-código)
 - [Errores sintáticos y lógicos](#errores-sintáticos-y-lógicos)
 - [Variables y tipos de datos](#variables-y-tipos-de-datos)

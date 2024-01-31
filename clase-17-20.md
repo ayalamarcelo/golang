@@ -4,7 +4,8 @@
 
 ###
 
-## Tabla de contenidos
+<h2 align="left">Tabla de contenidos:</h2>
+
 - [Cadenas de caracteres con el método equals](#cadenas-de-caracteres-con-el-método-equals)
 - [Declarar una variable](#declarar-una-variable)
 - [Comparar valores](#comparar-valores)
@@ -17,9 +18,8 @@
 - [Vectores (Arreglos unidimensionales)](#vectores-arreglos-unidimensionales)
 - [Indice de un Vector](#indice-de-un-vector)
 - [Sintaxis y pasos para programar un vector](#sintaxis-y-pasos-para-programar-un-vector)
-- [Arreglos unidimensionales (Vectores dinámcos)](#arreglos-unidimensionales-vectores-dinámcos)
+- [Arreglos unidimensionales (Vectores dinámicos)](#arreglos-unidimensionales-vectores-dinámicos)
 - [Ejercicio](#ejercicio-1)
-- [](#)
 
 
 ## Cadenas de caracteres con el método equals
@@ -190,7 +190,7 @@ Y dentro del paréntesis debemos de colocar el nombre del vector junto con la po
 **Ejercicio**
 Crear un vector de cinco posiciones, posteriormente guardar un número en cada una de las posiciones del vector, y finalmente imprimir en pantalla cada una de las posiciones para verificar que se hayan guardado los números de manera correcta.
 
-## Arreglos unidimensionales (Vectores dinámcos)
+## Arreglos unidimensionales (Vectores dinámicos)
 En java un vector dinámico a diferencia de un vector estático, no requiere que le indiques al índice que posición o en qué posición se debe recorrer, ya que esto lo va a hacer de manera automática, tanto la ida como el regreso. Lo cual vamos a lograr con la ayuda de una estructura repetitiva for.
 Esta estructura repetitiva es la que se usa generalmente cuando utilizas o trabajas con vectores en java, ya que esta estructura repetitiva nos permite declarar el índice dentro de su mismo cuerpo a diferencia de un while o dowhile que nosotros no podemos hacer esto, tendríamos que indicarlo dentro de las instrucciones. Resulta más cómodo utilizar una estructura repetitiva for para trabajar con vectores dinámicos.
 
@@ -213,5 +213,3 @@ Con ayuda del método lenght, yo le digo que `numero.lenght` sin importar el nú
 Realizar un programa que contenga un vector cuya longitud sea proporcionado por el usuario, posteriormente solicitar al usuario los números necesarios para llenar todas las posiciones del vector, es decir, si el usuario solicitó un arreglo de 10 posiciones, entonces el programa deberá de solicitarle al usuario 10 números, y finalmente se debe de imprimir el arreglo en pantalla de la siguiente manera:
 
 [5] [54] [12] [65] [6] [54] [897]
-
-## 
