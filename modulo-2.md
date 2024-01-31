@@ -70,7 +70,7 @@ public class Suma{
 | Operador | Nombre |           Ejemplo            |         Significado         |    ASCII     |
 | :------: | :----: | :--------------------------: | :-------------------------: | :----------: |
 |    &&    |  And   | Haz la tarea && lava la ropa | Haz la tarea y lava la ropa | Alt + 38  |
-|   (||)   |   Or   | Haz la tarea (||) lava la ropa | Haz la tarea o lava la ropa | Alt + 124 |
+|  **||**  |   Or   | Haz la tarea **||** lava la ropa | Haz la tarea o lava la ropa | Alt + 124 |
 
 > [!note]
 > Práctica propuesta
