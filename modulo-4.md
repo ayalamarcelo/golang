@@ -7,6 +7,7 @@
 <h2 align="left">Tabla de contenidos:</h2>
 
 - [Arreglos bidimensionales (Matrices)](#arreglos-bidimensionales-matrices)
+- [Arreglos bidimensionales (Matrices dinámicas)](#arreglos-bidimensionales-matrices-dinámicas)
 
 
 
@@ -40,3 +41,39 @@ Crear un programa que muestre en pantalla una Matriz de 2 filas y 2 columnas con
 [2] [5]
 
 > Primero van las filas y luego las columnas.
+
+## Arreglos bidimensionales (Matrices dinámicas)
+Al igual que los vectores, las matrices también pueden tener un comportamiento dinámico, es decir, el llenado se haga automáticamente además que el recorrido de nuestros índices también lo van a hacer sin necesidad que nosotros escribamos muchas líneas de código indicando a los índices cada posición que deben recorrer.
+
+
+Filas = 3
+Columnas = 3
+Contador = 1
+
+```java
+int numeros [][] = new int[filas][columnas];
+
+for(int j = 0; j < filas; j++) {
+  for (int i = 0; i < columnas; i++) {
+    numeros[j][i] = contador;
+    contador++;
+    System.out.print("[" + numeros[j][i] + "]");
+  }
+  System.out.println("");
+}
+```
+
+> La estructura repetitiva for nos ayuda a darle ese comportamiento dinámico a nuestros índices.
+> Tenemos un for dentro de otro for.
+
+|:--| 0 | 1 | 2 |
+|:--|:--|:--|:--|
+| 0 | 1 | 2 | 3 |
+| 1 | 4 | 5 | 6 |
+| 2 | 7 | 8 | 9 |
+
+i = 0
+j = 0
+
+contador  = 1
+
