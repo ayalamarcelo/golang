@@ -8,6 +8,7 @@
 
 - [Arreglos bidimensionales (Matrices)](#arreglos-bidimensionales-matrices)
 - [Arreglos bidimensionales (Matrices dinámicas)](#arreglos-bidimensionales-matrices-dinámicas)
+- [Interfaces gráficas (Librería Swing)](#interfaces-gráficas-librería-swing)
 
 
 
@@ -77,3 +78,38 @@ j = 0
 
 contador  = 1
 
+## Interfaces gráficas (Librería Swing)
+Una interfaz gráfica es un programa informático que facilita el entorno visual utilizando imágenes y objetos gráfico para representar las acciones y la información disponible en la interfaz, con esto el usuario puede manipular el programa sin la necesidad de escribir comandos e instrucciones complejas. Las interfaces gráficas surgen como una evolución de las interfaces de líneas de comando que se utilizaban en los primeros sistemas operativos. Un ejemplo de línea de comandos es el cmd de windows.
+El jdk nos provee de distintas librerías y métodos, ejemplo: scanner. Ahora para hacer una interfaz gráfica tenemos que volver a recurrir en una librería la cual va a ser `swing`.
+
+```java
+import javax.swing.*;
+
+public class Formulario extends JFrame{
+  private JLabel label1;
+
+  public Formulario(){
+   setLayout(null)
+   label1 = new JLabel("Hola mundo");
+   label1.setBounds(10, 20,200,300);// coordenadas ancho y alto
+   add(label1); //agregar
+ }
+
+ public static void main(String args[]){
+  Formulario formulario1 = new Formulario();
+  formulario1.setBound(0,0,400,300);
+  formulario1.setVisible(true);
+  formulario1.setLocationRelativeTo(null);// quiero que aparezca al centro de mi pantalla
+ }
+}
+```
+> `*` hacemos referencia a que vamos a utilizar todos los elementos que posee la librería swing. Para evitar estarlos importando cada vez que vayamos a utilizar uno.
+
+> `extends` nos ayuda a importar  clases que han programado previamente otras personas y esas clases las incluye dentro del jdk.
+
+Estamos combinando la librería swing junto con una nueva clase la cual vamos a importar y se llama `JFrame`. JFrame nos permite crear interfaces gráficas. La librería `swing` nos permite importar los elementos para armar nuestras interfaces, mientras que la clase JFrame lo que hace es permitirnos crear la interfaz gráfica, el contenedor donde van a ir todos nuestros elementos. Entonces al escribir la palabra `extends` estamos diciendo que queremos hacer uso de una clase que ya existe y que está en el jdk, el cual estamos importando gracias a la librería `swing`.
+`JLabel` nos permite crear etiquetas, donde vamos a poder crear o mostrar datos en pantalla sin necesidad de un `System.out.print` el jlabel es mostrar esos datos en la interfaz gráfica.
+`Modificadores de acceso` `private & public` son guardias de seguridad, se encargan de decir qué espacios son públicos y cuales privados. Con los modificadores de acceso le indicamos al programa qué elementos o clases u objetos van a ser de dominio público o de dominio privado. Nuestos JLabel siempre deben ser de dominio privado, solo los vamos a utilizar en la interfaz que estamos programando actualmente, mientras que el nombre de la clase, clase general es de dominio público, porque tienen que encontrarse.
+`setLayout` va a indiciar a través de coordenadas donde queremos colocar los elementos de toda la interfaz, pero para evitar que los coloque donde quiera tenemos que poner la palabra `null`.
+Los métodos los unimos con un punto cuando queremos que afecte a un objeto directamente o a un elemento, en este caso que afecte a nuestra `label1`.
+`constructores` un constructor te permite construir cosas pero no en el lugar donde estás programando sino en un lugar donde lo vas a invocar. Un constructor debe llamarse igual que el nombre de tu clase `!importante`.
