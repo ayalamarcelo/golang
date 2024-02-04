@@ -116,3 +116,4 @@ Los métodos los unimos con un punto cuando queremos que afecte a un objeto dire
 `constructores` un constructor te permite construir cosas pero no en el lugar donde estás programando sino en un lugar donde lo vas a invocar. Un constructor debe llamarse igual que el nombre de tu clase `!importante`.
 
 ## Interfaces gráficas (swing - JFrame)
+Vamos a manipular las coordenadas donde va a aperecer nuestra interfaz. 
