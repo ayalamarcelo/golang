@@ -10,6 +10,7 @@
 - [Arreglos bidimensionales (Matrices dinámicas)](#arreglos-bidimensionales-matrices-dinámicas)
 - [Interfaces gráficas (Librería Swing)](#interfaces-gráficas-librería-swing)
 - [Interfaces gráficas (swing - JFrame)](#interfaces-gráficas-swing---jframe)
+- [](#-2)
 
 
 
@@ -117,3 +118,6 @@ Los métodos los unimos con un punto cuando queremos que afecte a un objeto dire
 
 ## Interfaces gráficas (swing - JFrame)
 Vamos a manipular las coordenadas donde va a aperecer nuestra interfaz. 
+Dentro del constructor van los elementos que yo voy a poner en la interfaz gráfica, al ser del tipo público la clase JFrame que es quien nos va a ayudar a crear la pantalla de nuestra interfaz tendría que saber qué elementos van a ir dentro de la interfaz. Si nuestro constructor fuera privado, el JFrame no tendría acceso a nuestro constructor, entonces lo ponemos público para que nuestro JFrame pueda integrar en la interfaz.
+`setLayout` nos ayuda a indicarle al programa el uso de coordenas. Con null no hace nada, solo observa y espera a que nosotros demos la instrucción y que su acción sea completamente nula.
+##
