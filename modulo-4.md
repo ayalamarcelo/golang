@@ -10,6 +10,8 @@
 - [Arreglos bidimensionales (Matrices dinámicas)](#arreglos-bidimensionales-matrices-dinámicas)
 - [Interfaces gráficas (Librería Swing)](#interfaces-gráficas-librería-swing)
 - [Interfaces gráficas (swing - JFrame)](#interfaces-gráficas-swing---jframe)
+- [Interfaces gráficas librería swing JLabel](#interfaces-gráficas-librería-swing-jlabel)
+- [Interfaces gráficas librería swing componente JButton](#interfaces-gráficas-librería-swing-componente-jbutton)
 
 
 
@@ -136,4 +138,10 @@ public class Formulario extends JFrame { // herencia clase Jframe
   }
 }
 ```
-# 10min.
+## Interfaces gráficas librería swing JLabel
+Un JLabel o etiqueta nos permite mostrar texto dentro de una interfaz gráfica.
+
+## Interfaces gráficas librería swing componente JButton
+Este componente nos permite agregar botones a nuestra interfaces gráficas. Cuando nosotros programamos en java lo tenemos que programar en dos partes completamente diferentes. En primer lugar es crear el diseño, es decir, darle las dimensiones y el texto que queremos que tenga nuestro botón. Y en segundo lugar, tenemos que programar la funcionalidad, es decir, el `evento` que va a ejecutar.
+
+1:24
