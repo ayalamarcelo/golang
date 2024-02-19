@@ -144,4 +144,4 @@ Un JLabel o etiqueta nos permite mostrar texto dentro de una interfaz gráfica.
 ## Interfaces gráficas librería swing componente JButton
 Este componente nos permite agregar botones a nuestra interfaces gráficas. Cuando nosotros programamos en java lo tenemos que programar en dos partes completamente diferentes. En primer lugar es crear el diseño, es decir, darle las dimensiones y el texto que queremos que tenga nuestro botón. Y en segundo lugar, tenemos que programar la funcionalidad, es decir, el `evento` que va a ejecutar.
 
-1:24
+[1:24]
